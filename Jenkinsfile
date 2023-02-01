@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('build') {
+    stage('validate') {
       steps {
-        sh 'mvn build'
+        sh 'mvn validate'
       }
     }
 
